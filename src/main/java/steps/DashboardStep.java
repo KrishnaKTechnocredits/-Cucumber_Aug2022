@@ -1,16 +1,17 @@
 package steps;
 
-import io.cucumber.java.en.Then;
+import io.cucumber.java.en.Given;
+import pages.DashboardPage;
 
 public class DashboardStep {
 
-    @Then("user verify dashboard page displayed")
-    public void user_verify_dashboard_page_displayed() {
-        System.out.println("VERIFY: Dashboard Page displayed");
+    DashboardPage dashboardPage = DashboardPage.getObject();
+
+
+
+    @Given("user navigate to dashboard page")
+    public void user_navigate_to_dashboard_page() {
+        dashboardPage.isProfileDisplayed();
     }
 
-    @Then("user click on my info tab on darshboard page")
-    public void user_click_on_my_info_tab_on_darshboard_page() {
-        System.out.println("STEP: User click on my info tab");
-    }
 }

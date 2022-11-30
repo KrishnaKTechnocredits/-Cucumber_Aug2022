@@ -52,5 +52,6 @@
     <orderEntry type="library" name="Maven: io.cucumber:docstring:7.2.3" level="project" />
     <orderEntry type="library" name="Maven: io.cucumber:html-formatter:17.0.0" level="project" />
     <orderEntry type="library" name="Maven: io.cucumber:ci-environment:8.1.0" level="project" />
+    <orderEntry type="library" name="Maven: log4j:log4j:1.2.17" level="project" />
   </component>
 </module>

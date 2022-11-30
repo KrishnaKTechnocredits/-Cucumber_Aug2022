@@ -9,7 +9,7 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features = ".\\src\\test\\java\\featureFiles\\",
 		glue = "steps",
-		tags = "@1", //or, and, not
+		tags = "@1",
 		publish = true
 )
 public class Runner {

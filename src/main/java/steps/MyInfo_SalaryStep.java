@@ -1,17 +1,14 @@
 package steps;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
+import pages.DashboardPage;
+import pages.MyInfoPage;
+import pages.MyInfo_SalaryPage;
 
 public class MyInfo_SalaryStep {
 
-	@Then("user click on salary tab")
-	public void user_click_on_salary_tab() {
-		System.out.println("STEP: user click on salary tab");
-	}
+    MyInfo_SalaryPage myInfo_salaryPage = MyInfo_SalaryPage.getObject();
 
-	@Then("user should see ctc under salary tab")
-	public void user_should_see_ctc_under_salary_tab() {
-		System.out.println("VERIFY: User able to see CTC");
-	}
 
 }

@@ -1,18 +1,22 @@
 package steps;
 
+import base.PredefinedActions;
+import constant.ConstantValue;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
+import utility.PropertyFileOperations;
+
+import java.io.IOException;
 
 public class AutomationHooks {
 
 
     @Before
-    public void beforeScenario(Scenario scenario){
-        System.out.println("Before Scenario");
-        System.out.println("Scenario Name: "+ scenario.getName());
-        System.out.println("Tags: "+scenario.getSourceTagNames());
-        //Browser & URL launch
+    public void beforeScenario(Scenario scenario) throws IOException {
+        PropertyFileOperations fileOperations = new PropertyFileOperations(ConstantValue.CONFIGFILEPATH);
+        String url = fileOperations.getValue("url");
+        PredefinedActions.start(url);
     }
 
     @After
