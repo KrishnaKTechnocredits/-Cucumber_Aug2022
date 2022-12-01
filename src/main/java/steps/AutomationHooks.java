@@ -5,12 +5,12 @@ import constant.ConstantValue;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
+import io.cucumber.java.Status;
 import utility.PropertyFileOperations;
 
 import java.io.IOException;
 
 public class AutomationHooks {
-
 
     @Before
     public void beforeScenario(Scenario scenario) throws IOException {
@@ -22,8 +22,9 @@ public class AutomationHooks {
     @After
     public void afterScenario(Scenario scenario){
         if(scenario.isFailed()){
-            //Take Screenshot
+            scenario.attach(PredefinedActions.takeScreenShot(scenario.getName()),"image/png","failed_image");
         }
         System.out.println("After Scenario");
+        PredefinedActions.closeBrowser();
     }
 }
