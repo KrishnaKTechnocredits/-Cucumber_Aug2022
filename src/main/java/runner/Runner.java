@@ -1,10 +1,9 @@
 package runner;
 
-import com.github.mkolisnyk.cucumber.runner.ExtendedCucumberOptions;
-import org.junit.runner.RunWith;
-
 import io.cucumber.junit.Cucumber;
+
 import io.cucumber.junit.CucumberOptions;
+import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
@@ -12,13 +11,18 @@ import io.cucumber.junit.CucumberOptions;
 		glue = "steps",
 		tags = "@3",
 		publish = true,
-		dryRun = false
+		dryRun = false,
+		plugin = {
+				"rerun:target/failedScenario.txt",
+				"html:target/index.html",
+				"json:target/cucumber.json"
+		}
 )
 
-@ExtendedCucumberOptions(
-		retryCount = 2,
-		toPDF = true
-)
+//@ExtendedCucumberOptions(
+//		retryCount = 2,
+//		toPDF = true
+//)
 public class Runner {
 
 }

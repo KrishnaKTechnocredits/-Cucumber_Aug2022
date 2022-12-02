@@ -1,15 +1,0 @@
-
-œ
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(½€Æğÿÿÿÿÿ
-c	java:S100
-"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”§ï
-S	java:S106"9Replace this use of System.out or System.err by a logger.(Ú°¼‰şÿÿÿÿ
-b	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÇÒÏJ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(êœáşÿÿÿÿ
-h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆ“Ñ’øÿÿÿÿ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(¢ÕÄÏşÿÿÿÿ
-c	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×ğæú
-S	java:S106"9Replace this use of System.out or System.err by a logger.(­ê©¼ûÿÿÿÿ
-h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½€Æğÿÿÿÿÿ
-J
-java:S1128"5Remove this unused import 'io.cucumber.java.en.Then'.(çÊ{

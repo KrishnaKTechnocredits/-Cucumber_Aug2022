@@ -5,7 +5,6 @@ import constant.ConstantValue;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
-import io.cucumber.java.Status;
 import utility.PropertyFileOperations;
 
 import java.io.IOException;
